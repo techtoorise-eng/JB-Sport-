@@ -1,0 +1,6 @@
+{
+  "name": "Saiguru's JB Sports Academy",
+  "description": "Premium Sports Academy Landing Page Generator & Showcase with active sports programs, parent inquiry workflows, and zip file bundle downloads for parents of children aged 5-16.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

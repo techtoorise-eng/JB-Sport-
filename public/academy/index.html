@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saiguru's JB Sports Academy | Building Future Champions</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Premium Brand Fonts: Outfit (Display) and Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar-custom text-center py-2 px-3 d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-center align-items-center gap-3 flex-wrap">
+      <span class="badge text-bg-warning px-2.5 py-1 text-xs text-uppercase font-monospace tracking-wide">Limited Offer</span>
+      <span class="text-sm fw-semibold">Sign up this week and get an <strong>Elite Training Jersey & Pro Kit</strong> upon trial enrollment!</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Floating Glassmorphic Navbar) -->
+  <nav id="navbar-main" class="navbar navbar-expand-lg sticky-top navbar-light navbar-main-elegant">
+    <div class="container">
+      <a class="navbar-elegant-brand d-flex align-items-center gap-3" href="#">
+        <img src="assets/images/logo.svg" alt="Saiguru's JB Sports Academy Logo" class="navbar-brand-logo">
+        <div class="brand-text-container">
+          <span class="brand-text-first">Saiguru's</span>
+          <span class="brand-text-second">JB Sports</span>
+        </div>
+      </a>
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-icon-wrapper">
+          <span class="navbar-toggler-icon"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-lg-3 py-3 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#mission">Why JB?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#programs">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#age-groups">Age Groups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#facilities">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#book-trial">FAQ &amp; Booking</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn-elegant-orange text-uppercase py-2 px-4 shadow-sm text-decoration-none" href="#book-trial">Book Free Trial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Very Animated Cinema Carousel) -->
+  <header id="hero" class="hero-section text-white d-flex align-items-center position-relative overflow-hidden">
+    <!-- Bootstrap Carousel background slider with Ken Burns/fade animations -->
+    <div id="heroCarousel" class="carousel slide carousel-fade position-absolute w-100 h-100 top-0 start-0 z-0" data-bs-ride="carousel" data-bs-interval="4500" data-bs-pause="false">
+      <div class="carousel-indicators z-3">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="assets/images/hero.jpg" class="d-block w-100 h-100 object-fit-cover carousel-bg-img" alt="Saiguru's JB Sports Hero">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/soccer.jpg" class="d-block w-100 h-100 object-fit-cover carousel-bg-img" alt="Soccer training">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/basketball.jpg" class="d-block w-100 h-100 object-fit-cover carousel-bg-img" alt="Basketball training">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/tennis.jpg" class="d-block w-100 h-100 object-fit-cover carousel-bg-img" alt="Tennis training">
+        </div>
+      </div>
+    </div>
+    <!-- Overlay filter -->
+    <div class="video-overlay"></div>
+
+    <div class="container position-relative z-3 py-5">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-8 text-center text-lg-start">
+          <div class="badge-pill-brand d-inline-flex align-items-center gap-2 mb-4 reveal-scale">
+            <span class="pill-dot"></span>
+            <span class="text-uppercase font-monospace tracking-wider">AGES 5 – 16 YEARS • ELITE SPORT DEVELOPMENT</span>
+          </div>
+          
+          <h1 class="hero-title text-uppercase mb-3 reveal-fade-left">
+            Unleash Your Child’s <br><span class="text-gradient-neon">Athletic Potential</span>
+          </h1>
+          
+          <p class="hero-lead mb-5 max-w-xl text-neutral reveal-fade-left" style="max-width: 650px;">
+            Transform screen time into active, healthy, and high-performance physical agility. World-class modern arenas, certified professional coaching, and disciplined life skills mentorship.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start reveal-fade-left">
+            <a href="#book-trial" class="btn-elegant-orange text-uppercase py-3 px-5 text-decoration-none">
+              Book Free Trial Session <i class="bi bi-chevron-right ms-2 fs-5"></i>
+            </a>
+            <a href="#programs" class="btn-elegant-outline text-uppercase py-3 px-5 text-decoration-none" style="color: white !important; border-color: white;">
+              Explore Programs
+            </a>
+          </div>
+
+          <!-- Live Dynamic Stats Ticker Grid -->
+          <div class="row mt-5 pt-4 border-top border-white border-opacity-10 d-none d-md-flex text-start reveal-fade-up">
+            <div class="col-3 stat-item">
+              <div class="fs-2 fw-black text-orange-brand font-display" style="font-weight: 800;"><span class="counter-ticker" data-target="15">0</span>+</div>
+              <div class="text-xs text-uppercase font-monospace text-caption-custom" style="color: rgba(255, 255, 255, 0.7) !important;">Elite Coaches</div>
+            </div>
+            <div class="col-3 stat-item">
+              <div class="fs-2 fw-black text-white font-display" style="font-weight: 800;"><span class="counter-ticker" data-target="4.9" data-decimal="true">0.0</span>★</div>
+              <div class="text-xs text-uppercase font-monospace text-caption-custom" style="color: rgba(255, 255, 255, 0.7) !important;">Parent Rating</div>
+            </div>
+            <div class="col-3 stat-item">
+              <div class="fs-2 fw-black text-white font-display" style="font-weight: 800;"><span class="counter-ticker" data-target="500">0</span>+</div>
+              <div class="text-xs text-uppercase font-monospace text-caption-custom" style="color: rgba(255, 255, 255, 0.7) !important;">Active Athletes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Core Mission & Leadership values (Why JB?) -->
+  <section id="mission" class="py-5" style="background-color: var(--bg-main);">
+    <div class="container py-5">
+      <div class="row text-center mb-5 justify-content-center">
+        <div class="col-lg-8 reveal-fade-up">
+          <span class="section-tag-custom">OUR CORE MISSION</span>
+          <h2 class="section-title-custom text-uppercase mt-2">More Than Sports. We Build Leaders.</h2>
+          <p class="text-body mt-3">We partner with parents to handle critical developmental milestones. Our modern sport curriculums are engineered to forge long-term physical, mental and character traits.</p>
+        </div>
+      </div>
+      
+      <!-- Stagger Cascade Grid entries -->
+      <div class="row g-4 reveal-cascade">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="value-card-premium p-4 rounded-4 h-100 reveal-cascade-item">
+            <div class="card-icon-wrapper mb-4">
+              <i class="bi bi-clock-history fs-3"></i>
+            </div>
+            <h4 class="text-navy-brand text-uppercase mb-3 fw-bold" style="font-size: 1.22rem;">Screen Time Antidote</h4>
+            <p class="text-body text-sm mb-0">Replace addictive video gaming loops and passive visual patterns with explosive agility channels, systemic strength, and energetic playground joy.</p>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="value-card-premium p-4 rounded-4 h-100 reveal-cascade-item">
+            <div class="card-icon-wrapper mb-4">
+              <i class="bi bi-people-fill fs-3"></i>
+            </div>
+            <h4 class="text-navy-brand text-uppercase mb-3 fw-bold" style="font-size: 1.22rem;">Social Confidence Booster</h4>
+            <p class="text-body text-sm mb-0">Dispel social anxieties and build confidence through active communication, constructive team support, and real arena friendships that bolster security.</p>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="value-card-premium p-4 rounded-4 h-100 reveal-cascade-item">
+            <div class="card-icon-wrapper mb-4">
+              <i class="bi bi-shield-check fs-3"></i>
+            </div>
+            <h4 class="text-navy-brand text-uppercase mb-3 fw-bold" style="font-size: 1.22rem;">Character & Grit</h4>
+            <p class="text-body text-sm mb-0">We instill high-grade values: respect for coaches and rules, extreme resilience under athletic pressure, and structured habit consistency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports Programs Showcase (Tabbed & Premium dark theme background for contrast) -->
+  <section id="programs" class="py-5 section-slab-dark">
+    <div class="container py-5">
+      <div class="row align-items-end mb-5 reveal-fade-up">
+        <div class="col-lg-6">
+          <span class="section-tag-custom">TRAINING DISCIPLINES</span>
+          <h2 class="section-title-custom text-white text-uppercase mt-2 mb-0">Pick Your Child's Next Sport</h2>
+        </div>
+        <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+          <p class="text-neutral mb-0" style="max-width: 480px; display: inline-block; text-align: left; color: rgba(255, 255, 255, 0.75) !important;">
+            Every single batch enforces an elite 1:10 coach-to-student supervision ratio. This guarantees personalized bio-mechanical instruction and peak hazard protection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Program selector tabs -->
+      <div class="nav nav-pills custom-pills-premium mb-5 row g-2 reveal-fade-up" id="program-tabs" role="tablist">
+        <button class="nav-link active col-6 col-md py-2.5 rounded-3" id="tab-badminton" data-bs-toggle="pill" data-bs-target="#content-badminton" type="button" role="tab">
+          <i class="bi bi-award-fill me-2" style="color: var(--brand-orange)"></i> Badminton
+        </button>
+        <button class="nav-link col-6 col-md py-2.5 rounded-3" id="tab-dance" data-bs-toggle="pill" data-bs-target="#content-dance" type="button" role="tab">
+          <i class="bi bi-music-note-beamed me-2"></i> Dance
+        </button>
+        <button class="nav-link col-6 col-md py-2.5 rounded-3" id="tab-yoga" data-bs-toggle="pill" data-bs-target="#content-yoga" type="button" role="tab">
+          <i class="bi bi-heart-pulse-fill me-2"></i> Yoga
+        </button>
+        <button class="nav-link col-6 col-md py-2.5 rounded-3" id="tab-gymnastics" data-bs-toggle="pill" data-bs-target="#content-gymnastics" type="button" role="tab">
+          <i class="bi bi-activity me-2"></i> Gymnastics
+        </button>
+        <button class="nav-link col-6 col-md py-2.5 rounded-3" id="tab-zumba" data-bs-toggle="pill" data-bs-target="#content-zumba" type="button" role="tab">
+          <i class="bi bi-fire me-2"></i> Zumba
+        </button>
+      </div>
+
+      <!-- Tabs Contents -->
+      <div class="tab-content" id="program-contents">
+        <!-- Badminton Tab -->
+        <div class="tab-pane fade show active" id="content-badminton" role="tabpanel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal-fade-left">
+              <div class="program-visual-frame position-relative overflow-hidden rounded-4">
+                <img src="assets/images/badminton.jpg" alt="Badminton training" class="program-img-motion" referrerpolicy="no-referrer">
+              </div>
+            </div>
+            <div class="col-lg-6 reveal-fade-right">
+              <h3 class="fs-2 text-white font-display text-uppercase mb-3 fw-bold">BADMINTON CLINIC</h3>
+              <p class="mb-4 text-white-50" style="color: rgba(255, 255, 255, 0.8) !important;">
+                Certified coaching targeting rapid reflexes, backhand clearing mechanics, smash precision, and agile court coverage tactics. Students build high muscular agility, hand-eye coordination efficiency, and game play strategy.
+              </p>
+              
+              <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-white">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>All Batches:</strong> Beginner, Intermediate, & Advanced pathways</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Key Assets:</strong> High-tension carbon rackets, synthetic shuttlecocks, premium courts</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Schedule:</strong> Mon / Wed / Fri (4:00 PM – 5:30 PM)</span>
+                </li>
+              </ul>
+
+              <div class="p-4 rounded-4 border border-secondary border-opacity-30 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3" style="background-color: rgba(255,255,255,0.03);">
+                <div>
+                  <div class="text-xs text-orange-brand font-monospace text-uppercase fw-bold">Free Masterclass</div>
+                  <h5 class="text-white font-display text-uppercase mb-0 mt-1" style="font-weight: 700; font-size: 1.05rem;">Reserve Badminton Slot</h5>
+                </div>
+                <a href="#inquiry-box" class="btn-elegant-orange text-uppercase py-2.5 px-4 text-decoration-none">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dance Tab -->
+        <div class="tab-pane fade" id="content-dance" role="tabpanel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="program-visual-frame position-relative overflow-hidden rounded-4">
+                <img src="assets/images/dance.jpg" alt="Dance training" class="program-img-motion" referrerpolicy="no-referrer">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fs-2 text-white font-display text-uppercase mb-3 fw-bold">DANCE & RHYTHM STUDIO</h3>
+              <p class="mb-4 text-white-50" style="color: rgba(255, 255, 255, 0.8) !important;">
+                Nurture self-expression, motor coordination, and balanced joint flexibility. Covering contemporary, hip-hop, and classic rhythmic warmups, this high-energy studio builds coordination with confidence.
+              </p>
+              
+              <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-white">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Group Dynamics:</strong> Creative styling drills, group sync classes</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Key Assets:</strong> Studio with full-wall mirrors, high-fidelity wireless music, wood floors</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Schedule:</strong> Tue / Thu / Sat (4:30 PM – 6:00 PM)</span>
+                </li>
+              </ul>
+
+              <div class="p-4 rounded-4 border border-secondary border-opacity-30 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3" style="background-color: rgba(255,255,255,0.03);">
+                <div>
+                  <div class="text-xs text-orange-brand font-monospace text-uppercase fw-bold">Free Masterclass</div>
+                  <h5 class="text-white font-display text-uppercase mb-0 mt-1" style="font-weight: 700; font-size: 1.05rem;">Reserve Dance Slot</h5>
+                </div>
+                <a href="#inquiry-box" class="btn-elegant-orange text-uppercase py-2.5 px-4 text-decoration-none">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yoga Tab -->
+        <div class="tab-pane fade" id="content-yoga" role="tabpanel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="program-visual-frame position-relative overflow-hidden rounded-4">
+                <img src="assets/images/yoga.jpg" alt="Yoga training" class="program-img-motion" referrerpolicy="no-referrer">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fs-2 text-white font-display text-uppercase mb-3 fw-bold">ZEN YOGA ZONE</h3>
+              <p class="mb-4 text-white-50" style="color: rgba(255, 255, 255, 0.8) !important;">
+                Integrate breathing depth, posture holds, and athletic muscular recovery. This program is specially designed to relieve stress, build core balance, and enhance athletic focus for daily endurance.
+              </p>
+              
+              <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-white">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Pathways:</strong> Guided restorative postures, child-safe breathing meditation</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Key Assets:</strong> Organic comfort yoga mats, posture blocks, clean acoustics</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Schedule:</strong> Wed / Fri / Sun (3:30 PM – 5:00 PM)</span>
+                </li>
+              </ul>
+
+              <div class="p-4 rounded-4 border border-secondary border-opacity-30 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3" style="background-color: rgba(255,255,255,0.03);">
+                <div>
+                  <div class="text-xs text-orange-brand font-monospace text-uppercase fw-bold">Free Masterclass</div>
+                  <h5 class="text-white font-display text-uppercase mb-0 mt-1" style="font-weight: 700; font-size: 1.05rem;">Reserve Yoga Slot</h5>
+                </div>
+                <a href="#inquiry-box" class="btn-elegant-orange text-uppercase py-2.5 px-4 text-decoration-none">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gymnastics Tab -->
+        <div class="tab-pane fade" id="content-gymnastics" role="tabpanel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="program-visual-frame position-relative overflow-hidden rounded-4">
+                <img src="assets/images/gymnastics.jpg" alt="Gymnastics training" class="program-img-motion" referrerpolicy="no-referrer">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fs-2 text-white font-display text-uppercase mb-3 fw-bold">GYMNASTICS ELITE</h3>
+              <p class="mb-4 text-white-50" style="color: rgba(255, 255, 255, 0.8) !important;">
+                Experience premium gymnastics instruction. Developing extreme physical power, flexible joints, and complete core spatial balance in a world-class, cushioned-pad surrounding.
+              </p>
+              
+              <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-white">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Pathways:</strong> Vault routines, balance beams, safe tumbling tracks</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Key Assets:</strong> Cushioned safety flooring, impact-dissipating vaulting boards</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Schedule:</strong> Sat / Sun morning workshops (9:00 AM – 11:00 AM)</span>
+                </li>
+              </ul>
+
+              <div class="p-4 rounded-4 border border-secondary border-opacity-30 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3" style="background-color: rgba(255,255,255,0.03);">
+                <div>
+                  <div class="text-xs text-orange-brand font-monospace text-uppercase fw-bold">Free Masterclass</div>
+                  <h5 class="text-white font-display text-uppercase mb-0 mt-1" style="font-weight: 700; font-size: 1.05rem;">Reserve Gymnastics Slot</h5>
+                </div>
+                <a href="#inquiry-box" class="btn-elegant-orange text-uppercase py-2.5 px-4 text-decoration-none">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zumba Tab -->
+        <div class="tab-pane fade" id="content-zumba" role="tabpanel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="program-visual-frame position-relative overflow-hidden rounded-4">
+                <img src="assets/images/zumba.jpg" alt="Zumba training" class="program-img-motion" referrerpolicy="no-referrer">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="fs-2 text-white font-display text-uppercase mb-3 fw-bold">ZUMBA FITNESS PARTY</h3>
+              <p class="mb-4 text-white-50" style="color: rgba(255, 255, 255, 0.8) !important;">
+                High-energy aerobic dance classes that leverage musical rhythms to boost stamina, cardiovascular health, agility, and dynamic posture layout in an incredibly fun group social atmosphere.
+              </p>
+              
+              <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-white">
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Theme:</strong> Active cardio playlists, light-speed sync workouts</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Key Assets:</strong> LED active accent lighting, crystal clear audio, high energy coach guidance</span>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <i class="bi bi-check-circle-fill text-orange-brand fs-5"></i>
+                  <span><strong>Schedule:</strong> Daily late afternoon slots from 5:30 PM</span>
+                </li>
+              </ul>
+
+              <div class="p-4 rounded-4 border border-secondary border-opacity-30 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3" style="background-color: rgba(255,255,255,0.03);">
+                <div>
+                  <div class="text-xs text-orange-brand font-monospace text-uppercase fw-bold">Free Masterclass</div>
+                  <h5 class="text-white font-display text-uppercase mb-0 mt-1" style="font-weight: 700; font-size: 1.05rem;">Reserve Zumba Slot</h5>
+                </div>
+                <a href="#inquiry-box" class="btn-elegant-orange text-uppercase py-2.5 px-4 text-decoration-none">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Age-Specific Split Pathways (Fully Light Theme - Clear Text Colors) -->
+  <section id="age-groups" class="py-5" style="background-color: var(--bg-main);">
+    <div class="container py-5">
+      <div class="row text-center mb-5 justify-content-center">
+        <div class="col-lg-8 reveal-fade-up">
+          <span class="section-tag-custom">STRUCTURED PATHWAYS</span>
+          <h2 class="section-title-custom text-uppercase mt-2">Tailored For Every Stage</h2>
+          <p class="text-body mt-3">A 5-year-old child processes coaching differently than a teenager. Our tailored age-specific pathways ensure complete safety and active interest mapping.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center reveal-cascade">
+        <!-- Age Group 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="age-card-premium p-4 rounded-4 h-100 text-center reveal-cascade-item">
+            <span class="age-stamp-number">5-7</span>
+            <div class="fs-1 text-orange-brand mb-3"><i class="bi bi-heart-pulse-fill"></i></div>
+            <h4 class="text-navy-brand text-uppercase fw-bold" style="font-size: 1.25rem;">Active Sparks</h4>
+            <div class="badge text-white mb-3 font-monospace py-1.5 px-3" style="background-color: var(--brand-navy);">AGES 5 - 7</div>
+            <p class="text-body text-sm mb-4">Focus directly on motor coordination, spatial balance, soft hand-eye tracking, basic athletic habits, and instilling active fun exercises.</p>
+            <ul class="list-unstyled text-start text-xs border-top pt-3 d-flex flex-column gap-2" style="border-color: var(--border-delicate) !important;">
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Playful, high-agility drills</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Complete safety-padded setups</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Slim 45-Minute batches</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Age Group 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="age-card-premium p-4 rounded-4 h-100 text-center bg-white reveal-cascade-item" style="border-width: 2px; border-color: var(--brand-orange) !important;">
+            <span class="age-stamp-number">8-11</span>
+            <div class="fs-1 text-orange-brand mb-3"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h4 class="text-navy-brand text-uppercase fw-bold" style="font-size: 1.25rem;">Rising Stars</h4>
+            <div class="badge text-white mb-3 font-monospace py-1.5 px-3 fw-bold" style="background-color: var(--brand-orange);">AGES 8 - 11</div>
+            <p class="text-body text-sm mb-4">Mastering fundamental sport-specific drill tactics. Focuses on cardiovascular stamina, coordination plays, rules, and structured teamwork.</p>
+            <ul class="list-unstyled text-start text-xs border-top pt-3 d-flex flex-column gap-2" style="border-color: var(--border-delicate) !important;">
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Structured technical matches</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Leadership and communication building</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Interactive 60-Minute drill classes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Age Group 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="age-card-premium p-4 rounded-4 h-100 text-center reveal-cascade-item">
+            <span class="age-stamp-number">12-16</span>
+            <div class="fs-1 text-orange-brand mb-3"><i class="bi bi-award-fill"></i></div>
+            <h4 class="text-navy-brand text-uppercase fw-bold" style="font-size: 1.25rem;">Elite Elites</h4>
+            <div class="badge text-white mb-3 font-monospace py-1.5 px-3" style="background-color: var(--brand-navy);">AGES 12 - 16</div>
+            <p class="text-body text-sm mb-4">Advanced conditioning, high strength drills, team mechanics, tournament preparation pathways, and proactive competitive league advice.</p>
+            <ul class="list-unstyled text-start text-xs border-top pt-3 d-flex flex-column gap-2" style="border-color: var(--border-delicate) !important;">
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Heavy speed & aerobic workouts</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Playbook planning & tactical matches</li>
+              <li><i class="bi bi-star-fill text-orange-brand me-2"></i> Local club and championship entries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Facilities Showcase (Bento Grid Style) -->
+  <section id="facilities" class="py-5" style="background-color: var(--bg-slab);">
+    <div class="container py-5">
+      <div class="row text-center mb-5 justify-content-center">
+        <div class="col-lg-8 reveal-fade-up">
+          <span class="section-tag-custom">WORLD-CLASS INFRASTRUCTURE</span>
+          <h2 class="section-title-custom text-uppercase mt-2">Where Champions Are Nurtured</h2>
+          <p class="text-body mt-3">We possess completely premium, weather-sheltered fields and cushioned indoor arenas featuring world-class shock absorption to guarantee safety.</p>
+        </div>
+      </div>
+
+      <!-- Bento-style interactive cards -->
+      <div class="row g-4 reveal-fade-up">
+        <div class="col-md-6 col-lg-3">
+          <div class="bento-facility-card rounded-4 position-relative">
+            <img src="assets/images/badminton.jpg" alt="Badminton Court" class="w-100 h-100 object-fit-cover" style="transition: transform 0.5s ease;">
+            <div class="bento-meta-scrim p-3 position-absolute bottom-0 start-0 w-100 h-100 z-3 d-flex flex-column justify-content-end text-white">
+              <h5 class="mb-1 text-uppercase text-white fw-bold" style="font-size: 1.05rem;">Elite Wood Courts</h5>
+              <p class="text-xs font-monospace mb-0" style="color: rgba(255,255,255,0.85);">Professional shock-absorbing Badminton Courts</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="bento-facility-card rounded-4 position-relative">
+            <img src="assets/images/dance.jpg" alt="Dance Studio" class="w-100 h-100 object-fit-cover" style="transition: transform 0.5s ease;">
+            <div class="bento-meta-scrim p-3 position-absolute bottom-0 start-0 w-100 h-100 z-3 d-flex flex-column justify-content-end text-white">
+              <h5 class="mb-1 text-uppercase text-white fw-bold" style="font-size: 1.05rem;">High-Fidelity Studio</h5>
+              <p class="text-xs font-monospace mb-0" style="color: rgba(255,255,255,0.85);">Climate-controlled mirrored Dance Studio</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="bento-facility-card rounded-4 position-relative">
+            <img src="assets/images/gymnastics.jpg" alt="Gymnastics Arena" class="w-100 h-100 object-fit-cover" style="transition: transform 0.5s ease;">
+            <div class="bento-meta-scrim p-3 position-absolute bottom-0 start-0 w-100 h-100 z-3 d-flex flex-column justify-content-end text-white">
+              <h5 class="mb-1 text-uppercase text-white fw-bold" style="font-size: 1.05rem;">Safety Tumble Arena</h5>
+              <p class="text-xs font-monospace mb-0" style="color: rgba(255,255,255,0.85);">High-density tumble padding & balance systems</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="bento-facility-card rounded-4 position-relative">
+            <img src="assets/images/hero.jpg" alt="Safety facilities" class="w-100 h-100 object-fit-cover" style="transition: transform 0.5s ease;">
+            <div class="bento-meta-scrim p-3 position-absolute bottom-0 start-0 w-100 h-100 z-3 d-flex flex-column justify-content-end text-white">
+              <h5 class="mb-1 text-uppercase text-white fw-bold" style="font-size: 1.05rem;">Physio Recovery Wing</h5>
+              <p class="text-xs font-monospace mb-0" style="color: rgba(255,255,255,0.85);">Supervised posture assessment & physical wellness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Series (Parent Trust Chronicles) -->
+  <section id="testimonials" class="py-5" style="background-color: var(--bg-main);">
+    <div class="container py-5">
+      <div class="row align-items-end mb-5 reveal-fade-up">
+        <div class="col-lg-6">
+          <span class="section-tag-custom">PARENT TRUST CHRONICLES</span>
+          <h2 class="section-title-custom text-uppercase mt-2 mb-0">Success Stories From Parents</h2>
+        </div>
+        <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+          <div class="d-flex justify-content-lg-end gap-2" id="testimonial-nav">
+            <button class="btn btn-outline-dark rounded-circle shadow-sm" id="prev-btn" aria-label="Previous review" style="width: 44px; height: 44px;"><i class="bi bi-chevron-left"></i></button>
+            <button class="btn btn-outline-dark rounded-circle shadow-sm" id="next-btn" aria-label="Next review" style="width: 44px; height: 44px;"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial cards - Clean dynamic container -->
+      <div class="row g-4" id="testimonials-container">
+        <!-- Rendered dynamically by script.js with perfect high-contrast contrast styles and no overlapping colors -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Trial Pass Form and QA Accordion Section -->
+  <section id="book-trial" class="py-5" style="background-color: var(--bg-slab);">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- FAQs Columns -->
+        <div class="col-lg-6" id="faqs">
+          <span class="section-tag-custom">GOT UNRESOLVED HEADACHES?</span>
+          <h2 class="section-title-custom text-uppercase mt-2 mb-4">Frequently Asked Questions</h2>
+          <p class="text-body mb-5 text-sm" style="max-width: 490px;">We want parents to feel completely secure before making any schedule plans. Review our standard academy guidelines below, or connect with our support desk anytime!</p>
+
+          <div class="accordion custom-accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item accordion-item-premium mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-premium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne">
+                  What is included in the Free Trial Session?
+                </button>
+              </h2>
+              <div id="faq-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-body text-sm leading-relaxed" style="background-color: var(--bg-main);">
+                  The trial behaves exactly like a full 60 to 90-minute core session. Your child is matched to their age bracket, receives direct instruction from our head coaches, executes motor drills, participates in matches, and enjoys the trial. We also present a complimentary academy training jersey to the student upon enrollment.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item accordion-item-premium mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-premium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo">
+                  Are coaches certified and background-checked?
+                </button>
+              </h2>
+              <div id="faq-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-body text-sm leading-relaxed" style="background-color: var(--bg-main);">
+                  Absolutely 100%. Every trainer on our team holds authorized sports license credentials, CPR/First Aid certification, and undergoes extensive background vetting. We maintain a zero-tolerance policy regarding safety.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item accordion-item-premium mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-premium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree">
+                  Can we switch sports or customize our slots?
+                </button>
+              </h2>
+              <div id="faq-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-body text-sm leading-relaxed" style="background-color: var(--bg-main);">
+                  Yes, flexibility is key. We offer three separate evening slots on weekdays and morning workshops on weekends. If your child’s interest migrates (e.g. from Soccer to Basketball), we simply override their profile in our system for the subsequent module with no structural fees.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item accordion-item-premium mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-button-premium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFour">
+                  Do we need to configure expensive athletic gear early?
+                </button>
+              </h2>
+              <div id="faq-collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-body text-sm leading-relaxed" style="background-color: var(--bg-main);">
+                  No gear is required. For the primary trial class, we supply all sport assets (balls, bibs, racquets). Just bring your student in standard running shoes, clean sports clothing, and a water bottle!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Booking Card (High Contrast Slate-White Card Style with Glowing Accents) -->
+        <div class="col-lg-6" id="inquiry-box">
+          <div class="booking-card-premium p-4 p-md-5 rounded-4 bg-white hover-scale shadow-lg">
+            <span class="badge text-bg-warning px-3 py-1.5 text-xs text-uppercase font-monospace mb-3">Direct Academy Contact</span>
+            <h3 class="fs-3 text-navy-brand font-display text-uppercase mb-2 fw-bold" style="font-weight: 800;">Send Us an Inquiry</h3>
+            <p class="text-body text-sm mb-4">Have questions about schedules, training pathways, admissions, or trials? Complete this simple request and we will coordinate replies immediately!</p>
+            
+            <form id="trialBookingForm" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="parentName" class="form-label-elegant font-monospace text-uppercase">Full Name *</label>
+                <input type="text" class="form-control-elegant form-control w-100" id="parentName" required placeholder="e.g. Rajesh Mehta">
+                <div class="invalid-feedback text-xs">Your name is required.</div>
+              </div>
+              
+              <div class="col-md-6">
+                <label for="parentPhone" class="form-label-elegant font-monospace text-uppercase">WhatsApp / Phone Number *</label>
+                <div class="input-group">
+                  <span class="input-group-text form-addon-elegant">+91</span>
+                  <input type="tel" class="form-control-elegant form-control" id="parentPhone" pattern="[0-9]{10}" required placeholder="9876543210">
+                  <div class="invalid-feedback text-xs">A valid 10-digit mobile number is required.</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="childAge" class="form-label-elegant font-monospace text-uppercase">Inquiry Subject *</label>
+                <select class="form-select form-control-elegant" id="childAge" required>
+                  <option value="" disabled selected>Select subject</option>
+                  <option value="Admission Query">Admission & Batches</option>
+                  <option value="Schedule Inquiry">Training Schedule</option>
+                  <option value="Trial Session">Trial Session Request</option>
+                  <option value="General Question">General Assistance</option>
+                </select>
+                <div class="invalid-feedback text-xs">Please specify inquiry subject.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="preferredSport" class="form-label-elegant font-monospace text-uppercase">Select Program *</label>
+                <select class="form-select form-control-elegant" id="preferredSport" required>
+                  <option value="" disabled selected>Select preferred program</option>
+                  <option value="Badminton">Badminton Clinic</option>
+                  <option value="Dance">Dance & Rhythm Studio</option>
+                  <option value="Yoga">Zen Yoga Zone</option>
+                  <option value="Gymnastics">Gymnastics Elite</option>
+                  <option value="Zumba">Zumba Fitness Party</option>
+                  <option value="Unsure">Unsure / Multi-Activity</option>
+                </select>
+                <div class="invalid-feedback text-xs">Please select a program selection.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="parentEmail" class="form-label-elegant font-monospace text-uppercase">Email Address *</label>
+                <input type="email" class="form-control-elegant form-control w-100" id="parentEmail" required placeholder="e.g. rajesh@mehta.com">
+                <div class="invalid-feedback text-xs">A valid email address is required.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="specialNotes" class="form-label-elegant font-monospace text-uppercase">Message / Question Details</label>
+                <textarea class="form-control-elegant form-control w-100" id="specialNotes" rows="2" placeholder="Detail any prior experience or physical coordinates we should know..."></textarea>
+              </div>
+
+              <div class="col-12 mt-4">
+                <button type="submit" id="submitFormBtn" class="btn-elegant-orange w-100 py-3 text-uppercase">
+                  Submit Inquiry <i class="bi bi-chat-left-text-fill ms-2 fs-5"></i>
+                </button>
+              </div>
+            </form>
+            
+            <!-- Success feedback screen dynamically revealed via JS -->
+            <div id="bookingSuccessWidget" class="d-none text-center py-4">
+              <div class="success-badge-glow mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4">
+                <i class="bi bi-patch-check-fill fs-1"></i>
+              </div>
+              <h3 class="fs-3 text-navy-brand font-display text-uppercase mb-2 fw-bold" style="font-weight: 800;">INQUIRY SUBMITTED!</h3>
+              <p class="text-body text-sm mb-4">We have received your request. An acknowledgment email containing all filled information has also been sent to your email. Our team will contact you within 4-6 business hours.</p>
+              
+              <div class="ticket-wrapper-premium p-4 mb-4 text-start">
+                <div class="row g-3">
+                  <div class="col-8">
+                    <div class="ticket-field-label text-uppercase">Sender Name</div>
+                    <div class="fw-bold text-navy-brand" id="ticketParentName">-</div>
+                  </div>
+                  <div class="col-4">
+                    <div class="ticket-field-label text-uppercase">Inquiry ID</div>
+                    <div class="fw-bold text-orange-brand" id="ticketRef">-</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="ticket-field-label text-uppercase">Inquiry Subject</div>
+                    <div class="fw-bold text-navy-brand" id="ticketChildAge">-</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="ticket-field-label text-uppercase">Academy Program</div>
+                    <div class="fw-bold text-navy-brand" id="ticketSelectedSport">-</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- WhatsApp Action Link -->
+              <a id="whatsappShareBtn" target="_blank" href="#" class="btn w-100 py-3 text-uppercase mb-3 d-flex align-items-center justify-content-center gap-2 shadow-sm" style="background-color: #128C7E; border-color: #128C7E; color: white !important; font-weight: 700; border-radius: 8px; transition: all 0.25s;">
+                Instant WhatsApp Confirmation <i class="bi bi-whatsapp fs-5"></i>
+              </a>
+
+              <button type="button" id="bookAnotherBtn" class="btn btn-elegant-outline w-100 py-3 text-uppercase">
+                Submit Another Inquiry <i class="bi bi-plus-circle ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Block & Quick Contact (Footer) -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-5 mb-5">
+        <!-- Brand Info Segment -->
+        <div class="col-lg-4">
+          <a class="navbar-elegant-brand d-flex align-items-center gap-3 mb-3 text-decoration-none" href="#">
+            <img src="assets/images/logo.svg" alt="Saiguru's JB Sports Logo" style="height: 48px; width: auto;">
+            <div class="brand-text-container">
+              <span class="brand-text-first" style="color: #ffffff !important;">Saiguru's</span>
+              <span class="brand-text-second">JB Sports</span>
+            </div>
+          </a>
+          <p class="text-body text-sm leading-relaxed mb-4" style="max-width: 320px;">
+            Saiguru's JB Sports Academy is an elite sporting developmental school. We nurture physical fitness, tactical excellence, and life discipline inside every young champion.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-circle-logo" aria-label="Facebook Link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-circle-logo" aria-label="Instagram Link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-circle-logo" aria-label="Youtube Link"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-circle-logo" aria-label="WhatsApp Link"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Schedules Grid Links -->
+        <div class="col-6 col-lg-2">
+          <h5 class="text-uppercase footer-section-title mb-4">Schedules</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 text-sm">
+            <li><a href="#programs" class="footer-link-hover text-decoration-none">Soccer Classes</a></li>
+            <li><a href="#programs" class="footer-link-hover text-decoration-none">Basketball Core</a></li>
+            <li><a href="#programs" class="footer-link-hover text-decoration-none">Tennis Training</a></li>
+            <li><a href="#programs" class="footer-link-hover text-decoration-none">Swimming Slots</a></li>
+            <li><a href="#book-trial" class="footer-link-hover text-decoration-none">Holiday Camps</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div class="col-6 col-lg-3">
+          <h5 class="text-uppercase footer-section-title mb-4">Contact Desk</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3 text-sm">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-orange-brand mt-1"></i>
+              <span class="text-body">JB Sports Complex, Elite Arena Block D, Sector 15, Near Central Circle, Mumbai - 400001</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-orange-brand"></i>
+              <a href="tel:+919876543210" class="text-body text-decoration-none hover-scale-link">+91 98765 43210</a>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-orange-brand"></i>
+              <a href="mailto:info@jbsportsacademy.com" class="text-body text-decoration-none hover-scale-link">info@jbsportsacademy.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Live Directions Map Frame -->
+        <div class="col-lg-3">
+          <h5 class="text-uppercase footer-section-title mb-4">Our Location</h5>
+          <div class="footer-map-frame rounded-4 overflow-hidden border p-4 text-center d-flex align-items-center justify-content-center bg-white">
+            <div class="text-center">
+              <i class="bi bi-map-fill text-orange-brand fs-2 d-block mb-2"></i>
+              <strong class="brand-heading text-sm d-block text-navy-brand">JB Sports Ground Arena</strong>
+              <small class="text-xs text-caption-custom d-block mb-3">Gateway Field Circle, Mumbai</small>
+              <a href="https://maps.google.com" target="_blank" class="btn-elegant-orange btn-sm text-xs text-decoration-none py-1.5 px-3">Open Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Sub-bar -->
+      <div class="row pt-4 border-top text-center text-md-start" style="border-color: var(--border-delicate) !important;">
+        <div class="col-md-6 text-sm text-caption-custom">
+          <p class="mb-0">&copy; <span id="currentYear">2026</span> Saiguru's JB Sports Academy. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end text-caption-custom text-xs mt-2 mt-md-0 d-flex justify-content-center justify-content-md-end gap-3">
+          <span style="cursor: pointer;">Terms &amp; Conditions</span>
+          <span style="cursor: pointer;">Privacy Policy</span>
+          <span style="cursor: pointer;">Instructor Board Log</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

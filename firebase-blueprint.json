@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "booking": {
+      "title": "BookingLead",
+      "description": "Athlete trial pass booking lead template",
+      "type": "object",
+      "properties": {
+        "parentName": { "type": "string" },
+        "parentPhone": { "type": "string" },
+        "childAge": { "type": "string" },
+        "preferredSport": { "type": "string" },
+        "parentEmail": { "type": "string", "format": "email" },
+        "specialNotes": { "type": "string" },
+        "ticketRef": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "syncedToSheets": { "type": "boolean" }
+      },
+      "required": ["parentName", "parentPhone", "childAge", "preferredSport", "parentEmail", "ticketRef", "timestamp"]
+    },
+    "setting": {
+      "title": "SheetSettings",
+      "description": "Google Sheets synchronization active parameters",
+      "type": "object",
+      "properties": {
+        "spreadsheetId": { "type": "string" },
+        "spreadsheetUrl": { "type": "string" },
+        "title": { "type": "string" }
+      },
+      "required": ["spreadsheetId", "spreadsheetUrl", "title"]
+    }
+  },
+  "firestore": {
+    "/bookings/{bookingId}": {
+      "schema": "booking",
+      "description": "Classroom or Sports academy trial session bookings"
+    },
+    "/settings/google_sheets": {
+      "schema": "setting",
+      "description": "Active connected Google Sheet configuration"
+    }
+  }
+}
